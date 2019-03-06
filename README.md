@@ -1,5 +1,7 @@
 # rosie
 
+[![GoDoc](https://godoc.org/github.com/travelaudience/rosie?status.svg)](http://godoc.org/github.com/travelaudience/rosie)
+
 <img align="right" src="doc/rosie.gif">
 
 A library for workflow modelling and task interaction description.
@@ -109,8 +111,8 @@ if err != nil {
 }
 
 ```
-[//]: # (TODO: add godoc link once it's open sourced.)
 
+For more documentation and examples, please visit [godoc.org](https://github.com/travelaudience/rosie).
 
 ## Design
 
