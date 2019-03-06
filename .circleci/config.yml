@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.12
+    working_directory: /go/src/github.com/{{CIRCLE_PROJECT_USERNAME}}/{{CIRCLE_PROJECT_REPONAME}}
+    steps:
+      - checkout
+      - run:
+          name: Install
+          command: make get
+          environment:
+            GO111MODULE: "off"
+      - run:
+          name: Lint
+          command: make lint
+          environment:
+            GO111MODULE: "on"
+      - run:
+          name: Test
+          command: make test
+          environment:
+            GO111MODULE: "on"
