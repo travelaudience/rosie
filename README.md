@@ -1,6 +1,7 @@
 # rosie
 
-<img align="right" src="doc/rosie.gifgi">
+<img align="right" src="doc/rosie.gif">
+
 A library for workflow modelling and task interaction description.
 
 It makes a job easier by abstracting away the interaction with a command line interface.
