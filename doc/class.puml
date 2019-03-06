@@ -1,0 +1,123 @@
+@startuml
+skinparam defaultFontName SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace
+skinparam defaultFontSize 14px
+skinparam linetype ortho
+skinparam backgroundColor #fff
+skinparam shadowing false
+skinparam classBorderThickness .5
+skinparam class {
+	BackgroundColor #f6f8fa
+	BorderColor #005cc5
+	ArrowColor #005cc5
+	ArrowThickness .5
+}
+
+interface namer {
+    +Name() string
+}
+interface noder {
+    +Node() dag.Node
+}
+interface Attacher {
+    +Then(Attacher) Attacher
+}
+interface Joint {
+}
+interface Resulter {
+    +Result() Result
+}
+interface Executor {
+    +Exec(context.Context) (<-chan Piece, error)
+}
+
+Attacher *-- Joint
+Resulter *-- namer
+Executor *-- Resulter
+Executor *-- noder
+Joint *-left- namer
+Joint *-- noder
+
+class task << (S,orchid) >> {
+    ~anchor dag.Node
+}
+class GroupTask << (S,orchid) >> {
+    ~beginning task
+    ~end task
+    -- constructors --
+    +Group() GroupTask
+    +ForEach(string, func(string) Attacher) GroupTask
+    -- methods --
+    +Iter() (Iterator, error)
+    +Beginning() Attacher
+    +End() Attacher
+}
+class FnTask << (S,orchid) >> {
+    -- embedded --
+    ~task
+    -- constructors --
+    +Fn(string, FnClosure) FnTask
+    +Transform(string, FnClosure) FnTask
+    +Without(interface{}) FnTask
+    +UnmarshalFile(interface{}) FnTask
+}
+class CmdTask << (S,orchid) >> {
+    -- embedded --
+    ~task
+    -- constructors --
+    +Cmd(string, ...string) CmdTask
+    +Dir(CmdTask, string) CmdTask
+    +Env(CmdTask, ...string) CmdTask
+    +MakeDir(string) CmdTask
+    +RemoveDir(string) CmdTask
+}
+class Result << (S, orchid) >> {
+    ~taskName string
+	~key      string
+	~err      error
+	~value    interface{}
+    +Err() error
+    +Value() interface{}
+}
+class Piece << (S, orchid) >> {
+	+Text string
+	+Err  error
+}
+class Iterator << (S, orchid) >> {
+    +Next() (Joint, bool)
+}
+class FnClosure << (T, orange) FuncType >> {
+    +StringClosure(FnClosureString) FnClosure
+    +StringSliceClosure(FnClosureString) FnClosure
+}
+class FnClosureString << (T, orange) FuncType >>
+class FnClosureStringSlice << (T, orange) FuncType >>
+
+GroupTask *-down- task
+GroupTask <-up- Iterator
+FnTask *-down- task
+FnTask <-down- FnClosure
+CmdTask *-down- task
+Executor <-left- Piece
+Resulter <-left- Result
+Iterator <-- Joint
+
+FnClosure <|-up- FnClosureString
+FnClosure <|-up- FnClosureStringSlice
+
+task <|.. Attacher
+task <|.. Resulter
+
+FnTask <|.up. Executor
+CmdTask <|.up. Executor
+
+
+hide << FuncType >> members
+hide interface fields
+hide Joint members
+hide task methods
+hide Iterator fields
+hide Piece methods
+
+show FnClosure methods
+
+@enduml

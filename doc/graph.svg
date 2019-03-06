@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="985px" preserveAspectRatio="none" style="width:828px;height:985px;" version="1.1" viewBox="0 0 828 985" width="828px" zoomAndPan="magnify"><defs/><g><!--cluster ForEach--><rect fill="#FFFFFF" height="521" style="stroke: #005CC5; stroke-width: 0.5;" width="803" x="14" y="365"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="55" x="388" y="380.5352">ForEach</text><!--entity First--><rect fill="#005CC5" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="50" x="402" y="8"/><text fill="#FFFFFF" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="30" x="412" y="31.5352">First</text><!--entity Last--><rect fill="#D73A49" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="47" x="217.5" y="938"/><text fill="#FFFFFF" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="227.5" y="961.5352">Last</text><!--entity Command1--><rect fill="#FFFFFF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="100" x="310" y="104"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="80" x="320" y="127.5352">Command1</text><!--entity Command2--><rect fill="#FFFFFF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="100" x="326" y="200"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="80" x="336" y="223.5352">Command2</text><!--entity Command3--><rect fill="#FFFFFF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="100" x="445" y="104"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="80" x="455" y="127.5352">Command3</text><!--entity Command4--><rect fill="#FFFFFF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="100" x="377" y="296"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="80" x="387" y="319.5352">Command4</text><path d="M22.5,392 L22.5,493.8633 L337.5,493.8633 L337.5,402 L327.5,392 L22.5,392 " fill="#F1F8FF" style="stroke: #005CC5; stroke-width: 1.0;"/><path d="M327.5,392 L327.5,402 L337.5,402 L327.5,392 " fill="#F1F8FF" style="stroke: #005CC5; stroke-width: 1.0;"/><text fill="#0366D6" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="244" x="28.5" y="409.5684">Gathers results of tasks it depends on.</text><text fill="#0366D6" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="255" x="28.5" y="424.8789">Creates hidden nodes for each and every</text><text fill="#0366D6" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="160" x="28.5" y="440.1895">element in the collection.</text><text fill="#0366D6" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="211" x="28.5" y="455.5">It supports both maps and slices.</text><text fill="#0366D6" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="235" x="28.5" y="470.8105">The output data produced by ForEach</text><text fill="#0366D6" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="294" x="28.5" y="486.1211">are going to be of the same type as input data.</text><!--entity ForEach.First--><rect fill="#3B96FF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="109" x="372.5" y="425"/><text fill="#FFFFFF" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="89" x="382.5" y="448.5352">ForEach.First</text><!--entity ForEach.Last--><rect fill="#FF6E7D" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="106" x="188" y="842"/><text fill="#FFFFFF" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="86" x="198" y="865.5352">ForEach.Last</text><!--entity ForEach.StaticInput1--><rect fill="#D8DADF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="161" x="59.5" y="554"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="141" x="69.5" y="577.5352">ForEach.StaticInput1</text><!--entity ForEach.StaticInput2--><rect fill="#D8DADF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="161" x="255.5" y="554"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="141" x="265.5" y="577.5352">ForEach.StaticInput2</text><!--entity ForEach.StaticInput3--><rect fill="#D8DADF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="161" x="451.5" y="554"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="141" x="461.5" y="577.5352">ForEach.StaticInput3</text><!--entity ForEach.StaticInput4--><rect fill="#D8DADF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="161" x="647.5" y="554"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="141" x="657.5" y="577.5352">ForEach.StaticInput4</text><!--entity Function1_1--><rect fill="#FFFFFF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="105" x="90.5" y="650"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="85" x="100.5" y="673.5352">Function1_1</text><!--entity Function1_2--><rect fill="#FFFFFF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="105" x="279.5" y="650"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="85" x="289.5" y="673.5352">Function1_2</text><!--entity Function1_3--><rect fill="#FFFFFF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="105" x="475.5" y="650"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="85" x="485.5" y="673.5352">Function1_3</text><!--entity Function1_4--><rect fill="#FFFFFF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="105" x="671.5" y="650"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="85" x="681.5" y="673.5352">Function1_4</text><!--entity Function2_1--><rect fill="#FFFFFF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="105" x="104.5" y="746"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="85" x="114.5" y="769.5352">Function2_1</text><!--entity Function2_2--><rect fill="#FFFFFF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="105" x="272.5" y="746"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="85" x="282.5" y="769.5352">Function2_2</text><!--entity Function2_3--><rect fill="#FFFFFF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="105" x="447.5" y="746"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="85" x="457.5" y="769.5352">Function2_3</text><!--entity Function2_4--><rect fill="#FFFFFF" height="36.4883" style="stroke: #005CC5; stroke-width: 0.5;" width="105" x="643.5" y="746"/><text fill="#000000" font-family="SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="85" x="653.5" y="769.5352">Function2_4</text><!--link First to Command1--><path d="M406,44.0569 C406,44.0569 406,98.6977 406,98.6977 " fill="none" id="First-Command1" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="406,103.6977,410,94.6977,406,98.6977,402,94.6977,406,103.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link First to Command3--><path d="M448.5,44.0569 C448.5,44.0569 448.5,98.6977 448.5,98.6977 " fill="none" id="First-Command3" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="448.5,103.6977,452.5,94.6977,448.5,98.6977,444.5,94.6977,448.5,103.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link Command1 to Command2--><path d="M368,140.0569 C368,140.0569 368,194.6977 368,194.6977 " fill="none" id="Command1-Command2" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="368,199.6977,372,190.6977,368,194.6977,364,190.6977,368,199.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link Command2 to Command4--><path d="M401.5,236.0569 C401.5,236.0569 401.5,290.6977 401.5,290.6977 " fill="none" id="Command2-Command4" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="401.5,295.6977,405.5,286.6977,401.5,290.6977,397.5,286.6977,401.5,295.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link Command3 to Command4--><path d="M461,140.0629 C461,140.0629 461,290.8452 461,290.8452 " fill="none" id="Command3-Command4" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="461,295.8452,465,286.8452,461,290.8452,457,286.8452,461,295.8452" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link GMN15 to ForEach.First--><path d="M337.8273,443 C349.9293,443 361.5536,443 372.1827,443 " fill="none" id="GMN15-ForEach.First" style="stroke: #005CC5; stroke-width: 0.5; stroke-dasharray: 7.0,7.0;"/><!--link ForEach.First to ForEach.Last--><path d="M437.1667,461.0553 C437.1667,540.7384 437.1667,857 437.1667,857 C437.1667,857 299.0855,857 299.0855,857 " fill="none" id="ForEach.First-ForEach.Last" style="stroke: #005CC5; stroke-width: 0.5; stroke-dasharray: 7.0,7.0;"/><polygon fill="#005CC5" points="294.0855,857,303.0855,861,299.0855,857,303.0855,853,294.0855,857" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link ForEach.Last to ForEach.First--><path d="M294.2524,850 C349.1658,850 426.8333,850 426.8333,850 C426.8333,850 426.8333,466.0134 426.8333,466.0134 " fill="none" id="ForEach.Last-ForEach.First" style="stroke: #005CC5; stroke-width: 0.5; stroke-dasharray: 7.0,7.0;"/><polygon fill="#005CC5" points="426.8333,461.0134,422.8333,470.0134,426.8333,466.0134,430.8333,470.0134,426.8333,461.0134" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link ForEach.First to ForEach.StaticInput1--><path d="M387.1667,461.3802 C387.1667,485.2785 387.1667,524 387.1667,524 C387.1667,524 140,524 140,524 C140,524 140,548.8533 140,548.8533 " fill="none" id="ForEach.First-ForEach.StaticInput1" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="140,553.8533,144,544.8533,140,548.8533,136,544.8533,140,553.8533" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link ForEach.First to ForEach.StaticInput2--><path d="M401.8333,461.2089 C401.8333,461.2089 401.8333,548.8837 401.8333,548.8837 " fill="none" id="ForEach.First-ForEach.StaticInput2" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="401.8333,553.8837,405.8333,544.8837,401.8333,548.8837,397.8333,544.8837,401.8333,553.8837" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link ForEach.First to ForEach.StaticInput3--><path d="M466.5,461.2089 C466.5,461.2089 466.5,548.8837 466.5,548.8837 " fill="none" id="ForEach.First-ForEach.StaticInput3" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="466.5,553.8837,470.5,544.8837,466.5,548.8837,462.5,544.8837,466.5,553.8837" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link ForEach.First to ForEach.StaticInput4--><path d="M481.5088,443 C568.2488,443 728,443 728,443 C728,443 728,548.7911 728,548.7911 " fill="none" id="ForEach.First-ForEach.StaticInput4" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="728,553.7911,732,544.7911,728,548.7911,724,544.7911,728,553.7911" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link ForEach.StaticInput1 to Function1_1--><path d="M143,590.0569 C143,590.0569 143,644.6977 143,644.6977 " fill="none" id="ForEach.StaticInput1-Function1_1" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="143,649.6977,147,640.6977,143,644.6977,139,640.6977,143,649.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link ForEach.StaticInput2 to Function1_2--><path d="M332,590.0569 C332,590.0569 332,644.6977 332,644.6977 " fill="none" id="ForEach.StaticInput2-Function1_2" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="332,649.6977,336,640.6977,332,644.6977,328,640.6977,332,649.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link ForEach.StaticInput3 to Function1_3--><path d="M528,590.0569 C528,590.0569 528,644.6977 528,644.6977 " fill="none" id="ForEach.StaticInput3-Function1_3" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="528,649.6977,532,640.6977,528,644.6977,524,640.6977,528,649.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link ForEach.StaticInput4 to Function1_4--><path d="M724,590.0569 C724,590.0569 724,644.6977 724,644.6977 " fill="none" id="ForEach.StaticInput4-Function1_4" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="724,649.6977,728,640.6977,724,644.6977,720,640.6977,724,649.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link Function1_1 to Function2_1--><path d="M150,686.0569 C150,686.0569 150,740.6977 150,740.6977 " fill="none" id="Function1_1-Function2_1" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="150,745.6977,154,736.6977,150,740.6977,146,736.6977,150,745.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link Function1_2 to Function2_2--><path d="M328.5,686.0569 C328.5,686.0569 328.5,740.6977 328.5,740.6977 " fill="none" id="Function1_2-Function2_2" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="328.5,745.6977,332.5,736.6977,328.5,740.6977,324.5,736.6977,328.5,745.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link Function1_3 to Function2_3--><path d="M514,686.0569 C514,686.0569 514,740.6977 514,740.6977 " fill="none" id="Function1_3-Function2_3" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="514,745.6977,518,736.6977,514,740.6977,510,736.6977,514,745.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link Function1_4 to Function2_4--><path d="M710,686.0569 C710,686.0569 710,740.6977 710,740.6977 " fill="none" id="Function1_4-Function2_4" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="710,745.6977,714,736.6977,710,740.6977,706,736.6977,710,745.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link Function2_1 to ForEach.Last--><path d="M198.75,782.0569 C198.75,782.0569 198.75,836.6977 198.75,836.6977 " fill="none" id="Function2_1-ForEach.Last" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="198.75,841.6977,202.75,832.6977,198.75,836.6977,194.75,832.6977,198.75,841.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link Function2_2 to ForEach.Last--><path d="M283.25,782.0569 C283.25,782.0569 283.25,836.6977 283.25,836.6977 " fill="none" id="Function2_2-ForEach.Last" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="283.25,841.6977,287.25,832.6977,283.25,836.6977,279.25,832.6977,283.25,841.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link Function2_3 to ForEach.Last--><path d="M500,782.3415 C500,811.2107 500,864 500,864 C500,864 299.0375,864 299.0375,864 " fill="none" id="Function2_3-ForEach.Last" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="294.0375,864,303.0375,868,299.0375,864,303.0375,860,294.0375,864" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link Function2_4 to ForEach.Last--><path d="M696,782.1511 C696,812.6787 696,871 696,871 C696,871 299.0848,871 299.0848,871 " fill="none" id="Function2_4-ForEach.Last" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="294.0848,871,303.0848,875,299.0848,871,303.0848,867,294.0848,871" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link Command4 to ForEach.First--><path d="M427,332.2089 C427,332.2089 427,419.8837 427,419.8837 " fill="none" id="Command4-ForEach.First" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="427,424.8837,431,415.8837,427,419.8837,423,415.8837,427,424.8837" style="stroke: #005CC5; stroke-width: 0.5;"/><!--link ForEach.Last to Last--><path d="M241,878.0569 C241,878.0569 241,932.6977 241,932.6977 " fill="none" id="ForEach.Last-Last" style="stroke: #005CC5; stroke-width: 0.5;"/><polygon fill="#005CC5" points="241,937.6977,245,928.6977,241,932.6977,237,928.6977,241,937.6977" style="stroke: #005CC5; stroke-width: 0.5;"/><!--
+@startuml
+skinparam DefaultFontName SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace
+skinparam DefaultFontSize 14px
+skinparam LineType ortho
+skinparam BackgroundColor #fff
+skinparam Shadowing false
+skinparam ArrowColor #005cc5
+skinparam ArrowThickness .5
+skinparam rectangle {
+	BackgroundColor white
+	BorderColor #005cc5
+	BorderThickness .5
+
+	BackgroundColor<<Hidden>> #d8dadf
+
+	BackgroundColor<<Beginning>> #005cc5
+	FontColor<<Beginning>> #fff
+
+	BackgroundColor<<MiddleBeginning>> #3b96ff
+	FontColor<<MiddleBeginning>> #fff
+
+	BackgroundColor<<End>> #d73a49
+	FontColor<<End>> #fff
+
+	BackgroundColor<<MiddleEnd>> #ff6e7d
+    FontColor<<MiddleEnd>> #fff
+
+	BorderColor<<Information>> #e36209
+}
+skinparam note {
+    BackgroundColor #f1f8ff
+    BorderColor #005cc5
+    FontColor #0366d6
+}
+
+
+
+
+rectangle First << Beginning >> as First {
+}
+rectangle Last << End >> as Last {
+}
+
+rectangle Command1 << Middle >> as Command1 {
+}
+rectangle Command2 << Middle >> as Command2 {
+}
+rectangle Command3 << Middle >> as Command3 {
+}
+rectangle Command4 << Middle >> as Command4 {
+}
+
+First -down-> Command1
+First -down-> Command3
+Command1 -down-> Command2
+Command2 -down-> Command4
+Command3 -down-> Command4
+
+rectangle [ForEach] << GroupTask >> as ForEach {
+    rectangle ForEach.First << MiddleBeginning >> as ForEach.First {
+}
+    note left of ForEach.First: Gathers results of tasks it depends on.\nCreates hidden nodes for each and every\nelement in the collection.\nIt supports both maps and slices.\nThe output data produced by ForEach\nare going to be of the same type as input data.
+    rectangle ForEach.Last << MiddleEnd >> as ForEach.Last {
+}
+
+
+    ForEach.First ..down..> ForEach.Last
+    ForEach.Last ..down..> ForEach.First
+
+    rectangle ForEach.StaticInput1 << Hidden >> as ForEach.StaticInput1 {
+}
+    rectangle ForEach.StaticInput2 << Hidden >> as ForEach.StaticInput2 {
+}
+    rectangle ForEach.StaticInput3 << Hidden >> as ForEach.StaticInput3 {
+}
+    rectangle ForEach.StaticInput4 << Hidden >> as ForEach.StaticInput4 {
+}
+
+    ForEach.First -down-> ForEach.StaticInput1
+    ForEach.First -down-> ForEach.StaticInput2
+    ForEach.First -down-> ForEach.StaticInput3
+    ForEach.First -down-> ForEach.StaticInput4
+
+    rectangle Function1_1 << Middle >> as Function1_1 {
+}
+    rectangle Function1_2 << Middle >> as Function1_2 {
+}
+    rectangle Function1_3 << Middle >> as Function1_3 {
+}
+    rectangle Function1_4 << Middle >> as Function1_4 {
+}
+
+
+    ForEach.StaticInput1 -down-> Function1_1
+    ForEach.StaticInput2 -down-> Function1_2
+    ForEach.StaticInput3 -down-> Function1_3
+    ForEach.StaticInput4 -down-> Function1_4
+
+    rectangle Function2_1 << Middle >> as Function2_1 {
+}
+    rectangle Function2_2 << Middle >> as Function2_2 {
+}
+    rectangle Function2_3 << Middle >> as Function2_3 {
+}
+    rectangle Function2_4 << Middle >> as Function2_4 {
+}
+
+    Function1_1 -down-> Function2_1
+    Function1_2 -down-> Function2_2
+    Function1_3 -down-> Function2_3
+    Function1_4 -down-> Function2_4
+
+    Function2_1 -down-> ForEach.Last
+    Function2_2 -down-> ForEach.Last
+    Function2_3 -down-> ForEach.Last
+    Function2_4 -down-> ForEach.Last
+}
+
+Command4 -down-> ForEach.First
+ForEach.Last -down-> Last
+
+hide stereotype
+
+@enduml
+
+PlantUML version 1.2019.02(Fri Mar 01 22:20:40 CET 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_172-b11
+Operating System: Mac OS X
+OS Version: 10.14.3
+Default Encoding: UTF-8
+Language: pl
+Country: PL
+--></g></svg>

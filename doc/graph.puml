@@ -1,0 +1,124 @@
+@startuml
+skinparam DefaultFontName SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace
+skinparam DefaultFontSize 14px
+skinparam LineType ortho
+skinparam BackgroundColor #fff
+skinparam Shadowing false
+skinparam ArrowColor #005cc5
+skinparam ArrowThickness .5
+skinparam rectangle {
+	BackgroundColor white
+	BorderColor #005cc5
+	BorderThickness .5
+
+	BackgroundColor<<Hidden>> #d8dadf
+
+	BackgroundColor<<Beginning>> #005cc5
+	FontColor<<Beginning>> #fff
+
+	BackgroundColor<<MiddleBeginning>> #3b96ff
+	FontColor<<MiddleBeginning>> #fff
+
+	BackgroundColor<<End>> #d73a49
+	FontColor<<End>> #fff
+
+	BackgroundColor<<MiddleEnd>> #ff6e7d
+    FontColor<<MiddleEnd>> #fff
+
+	BorderColor<<Information>> #e36209
+}
+skinparam note {
+    BackgroundColor #f1f8ff
+    BorderColor #005cc5
+    FontColor #0366d6
+}
+
+!definelong dag(x, y)
+rectangle x << y >> as x {
+}
+!enddefinelong
+
+!definelong task(x)
+rectangle x << *task >> as x {
+}
+!enddefinelong
+
+!definelong connect(x,y, z = 'down', m = '')
+!ifdef m {
+x -z--> y : m
+!endif
+!ifndef m {
+x -z-> y
+!endif
+!enddefinelong
+
+dag(First, Beginning)
+dag(Last, End)
+
+dag(Command1, Middle)
+dag(Command2, Middle)
+dag(Command3, Middle)
+dag(Command4, Middle)
+
+connect(First, Command1)
+connect(First, Command3)
+connect(Command1, Command2)
+connect(Command2, Command4)
+connect(Command3, Command4)
+
+rectangle [ForEach] << GroupTask >> as ForEach {
+    dag(ForEach.First, MiddleBeginning)
+    note left of ForEach.First: Gathers results of tasks it depends on.\nCreates hidden nodes for each and every\nelement in the collection.\nIt supports both maps and slices.\nThe output data produced by ForEach\nare going to be of the same type as input data.
+    dag(ForEach.Last, MiddleEnd)
+
+
+    ForEach.First ..down..> ForEach.Last
+    ForEach.Last ..down..> ForEach.First
+
+    dag(ForEach.StaticInput1, Hidden)
+    dag(ForEach.StaticInput2, Hidden)
+    dag(ForEach.StaticInput3, Hidden)
+    dag(ForEach.StaticInput4, Hidden)
+
+    connect(ForEach.First, ForEach.StaticInput1)
+    connect(ForEach.First, ForEach.StaticInput2)
+    connect(ForEach.First, ForEach.StaticInput3)
+    connect(ForEach.First, ForEach.StaticInput4)
+
+    dag(Function1_1, Middle)
+    dag(Function1_2, Middle)
+    dag(Function1_3, Middle)
+    dag(Function1_4, Middle)
+
+'    connect(Function1_1, Function1_2, right[hidden])
+'    connect(Function1_2, Function1_3, right[hidden])
+'    connect(Function1_3, Function1_4, right[hidden])
+'    connect(Function1_4, Function1_1, right[hidden])
+
+    connect(ForEach.StaticInput1, Function1_1)
+    connect(ForEach.StaticInput2, Function1_2)
+    connect(ForEach.StaticInput3, Function1_3)
+    connect(ForEach.StaticInput4, Function1_4)
+
+    dag(Function2_1, Middle)
+    dag(Function2_2, Middle)
+    dag(Function2_3, Middle)
+    dag(Function2_4, Middle)
+
+    connect(Function1_1, Function2_1)
+    connect(Function1_2, Function2_2)
+    connect(Function1_3, Function2_3)
+    connect(Function1_4, Function2_4)
+
+    connect(Function2_1, ForEach.Last)
+    connect(Function2_2, ForEach.Last)
+    connect(Function2_3, ForEach.Last)
+    connect(Function2_4, ForEach.Last)
+}
+
+connect(Command4, ForEach.First)
+connect(ForEach.Last, Last)
+
+hide stereotype
+
+@enduml
