@@ -60,7 +60,7 @@ func TestWalker_Walk(t *testing.T) {
 
 	for name, occurrences := range unique {
 		if occurrences > 1 {
-			t.Errorf("%s occured more than once: %d", name, occurrences)
+			t.Errorf("%s occurred more than once: %d", name, occurrences)
 		}
 	}
 }
