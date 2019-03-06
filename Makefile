@@ -3,10 +3,11 @@ all: get test
 
 .PHONY: get
 get:
-	go get -u github.com/golang/lint/golint \
+	go get -u golang.org/x/lint/golint \
+		golang.org/x/tools/cmd/stringer \
 		golang.org/x/tools/cmd/goimports \
 		github.com/securego/gosec/cmd/gosec/... \
-		honnef.co/go/tools
+		honnef.co/go/tools/...
 
 .PHONY: lint
 lint:
@@ -17,7 +18,7 @@ lint:
 	gosec ./...
 
 .PHONY: test
-test: lint
+test:
 	go test -race -coverprofile=cover.out -covermode=atomic -count=2 .
 
 .PHONY: fix
@@ -28,5 +29,6 @@ fix:
 
 .PHONY: gen
 gen:
+	go generate
 	java -jar ./tmp/plantuml.jar -verbose doc/class.puml -tsvg
 	java -jar ./tmp/plantuml.jar -verbose doc/graph.puml -tsvg
