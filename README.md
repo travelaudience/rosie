@@ -1,4 +1,4 @@
-# rosie
+# rosie [![CircleCI](https://circleci.com/gh/travelaudience/rosie.svg?style=svg)](https://circleci.com/gh/travelaudience/rosie)
 
 [![GoDoc](https://godoc.org/github.com/travelaudience/rosie?status.svg)](http://godoc.org/github.com/travelaudience/rosie)
 [![Go Report Card](https://goreportcard.com/badge/github.com/travelaudience/rosie)](https://goreportcard.com/report/github.com/travelaudience/rosie)
