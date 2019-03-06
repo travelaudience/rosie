@@ -1,6 +1,7 @@
 # rosie
 
 [![GoDoc](https://godoc.org/github.com/travelaudience/rosie?status.svg)](http://godoc.org/github.com/travelaudience/rosie)
+[![Go Report Card](https://goreportcard.com/badge/github.com/travelaudience/rosie)](https://goreportcard.com/report/github.com/travelaudience/rosie)
 
 <img align="right" src="doc/rosie.gif">
 
