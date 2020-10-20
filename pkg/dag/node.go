@@ -10,11 +10,18 @@ import (
 )
 
 const (
+	// TypeMiddle represents the node type located in the middle of the graph.
 	TypeMiddle Type = iota
+	// TypeBeginning represents the node type that indicates beginning of the graph.
 	TypeBeginning
+	// TypeEnd represents the node type that indicates end of the graph.
 	TypeEnd
+	// TypeMiddleBeginning represents the node type that indicates the beginning of a subgraph.
 	TypeMiddleBeginning
+	// TypeMiddleEnd represents the node type that indicates the end of a subgraph.
 	TypeMiddleEnd
+	// TypeHidden represents the node type that is ignored by a drawer, other than that.
+	// It can be considered equal to TypeMiddle.
 	TypeHidden
 )
 
@@ -26,18 +33,24 @@ const (
 )
 
 type (
+	// Type is a kind of a node.
 	Type   int
 	status int
 )
 
+// Node is a single vertex of a graph.
 type Node struct {
+	// Data stores logic associated with the node that may be executed by a visitor.
 	Data              interface{}
+
 	status            status
 	kind              Type
 	parents, children Nodes
 	beginning, end    *Node
 }
 
+// New instantiate a new graph. It returns its beginning and its end.
+// It's up to the caller how it wants to interact with the graph.
 func New() (*Node, *Node) {
 	b := &Node{kind: TypeBeginning}
 	e := &Node{kind: TypeEnd}
@@ -50,6 +63,7 @@ func New() (*Node, *Node) {
 	return b, e
 }
 
+// Hidden instantiates an "invisible" node.
 func Hidden(d interface{}) *Node {
 	return &Node{
 		Data: d,
@@ -61,22 +75,27 @@ func (n *Node) isGraph() bool {
 	return n.beginning != nil || n.end != nil
 }
 
+// Type returns node kind.
 func (n *Node) Type() Type {
 	return n.kind
 }
 
+// Done returns true if node can be considered visited.
 func (n *Node) Done() bool {
 	return n.status == statusDone || n.kind == TypeBeginning
 }
 
+// MarkAsDone marks node as already processed.
 func (n *Node) MarkAsDone() {
 	n.status = statusDone
 }
 
+// MarkAsFailed marks node as failed.
 func (n *Node) MarkAsFailed() {
 	n.status = statusFailed
 }
 
+// GoString implements fmt GoStringer interface.
 func (n Node) GoString() string {
 	buf := bytes.NewBuffer(nil)
 	n.goString(buf, 0)
@@ -96,6 +115,10 @@ func (n Node) goString(w io.Writer, i int) {
 	}
 }
 
+// After allows to attach node one after another.
+// It takes care of already existing connections receiver node has,
+// so that node that is injected become a proper bridge.
+// Injected node loses its own connections.
 func (n *Node) After(node *Node) {
 	for _, child := range n.children {
 		if node.isGraph() {
@@ -119,6 +142,8 @@ func (n *Node) After(node *Node) {
 	n.children.add(node)
 }
 
+// Between allows to inject receiver node between given nodes.
+// Receiver node loses its own connections.
 func (n *Node) Between(beginning, end *Node) {
 	if n.isGraph() {
 		beginning.children.replace(end, n)
@@ -157,16 +182,20 @@ func (n *Node) between(parent, child *Node) {
 	n.children.add(child)
 }
 
+// Children returns a collection of nodes given node is the parent of.
 func (n *Node) Children() Nodes {
 	return n.children
 }
 
+// Parents returns a collection of nodes given node is child of.
 func (n *Node) Parents() Nodes {
 	return n.parents
 }
 
+// Nodes is a set of nodes.
 type Nodes []*Node
 
+// String implements fmt Stringer interface.
 func (n Nodes) String() string {
 	var parts []string
 	for _, nn := range n {

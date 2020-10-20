@@ -4,6 +4,18 @@ package dag
 
 import "strconv"
 
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[TypeMiddle-0]
+	_ = x[TypeBeginning-1]
+	_ = x[TypeEnd-2]
+	_ = x[TypeMiddleBeginning-3]
+	_ = x[TypeMiddleEnd-4]
+	_ = x[TypeHidden-5]
+}
+
 const _Type_name = "TypeMiddleTypeBeginningTypeEndTypeMiddleBeginningTypeMiddleEndTypeHidden"
 
 var _Type_index = [...]uint8{0, 10, 23, 30, 49, 62, 72}
@@ -13,6 +25,15 @@ func (i Type) String() string {
 		return "Type(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
 	return _Type_name[_Type_index[i]:_Type_index[i+1]]
+}
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[statusNotSeen-0]
+	_ = x[statusVisited-1]
+	_ = x[statusDone-2]
+	_ = x[statusFailed-3]
 }
 
 const _status_name = "statusNotSeenstatusVisitedstatusDonestatusFailed"
